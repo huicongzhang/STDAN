@@ -1,0 +1,9 @@
+pycocotools
+tqdm
+cython
+scipy   
+easydict    
+imageio 
+einops 
+scikit-image 
+tensorboardX
