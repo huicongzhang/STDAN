@@ -54,7 +54,7 @@ python runner.py --data_path=/yourpath/DeepVideoDeblurring_Dataset/quantitative_
 
 In [here](config.py), there are more settings of testing and training. 
 
-Some video results are shown in [project page](https://vilab.hit.edu.cn/projects/stdan)
+
 
 ## Cite this work
 
