@@ -127,3 +127,22 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+models/ops/build
+models/ops/dist
+models/ops/MultiScaleDeformableAttention.egg-info/
+*/__pycache__
+*/*/*/__pycache__
+__pycache__
+exp_log
+utils/__pycache__
+models/__pycache__
+losses/__pycache__
+core/__pycache__
+models/model/__pycache__
+models/FAC/__pycache__
+models/model/__pycache__
+datasets/data/__pycache__
+models/ops/functions/__pycache__
+models/ops/modules/__pycache__
+weights
