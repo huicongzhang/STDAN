@@ -145,4 +145,4 @@ models/model/__pycache__
 datasets/data/__pycache__
 models/ops/functions/__pycache__
 models/ops/modules/__pycache__
-weights
+weights/*
