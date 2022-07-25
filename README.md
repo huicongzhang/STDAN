@@ -1,7 +1,6 @@
 # Spatio-Temporal Deformable Attention Network for Video Deblurring (ECCV2022)
-PyTorch codes for "Spatio-Temporal Deformable Attention Network for Video Deblurring (ECCV2022)"
 
-[Paper](https://arxiv.org/abs/2207.10852) | [Project Page](https://vilab.hit.edu.cn/projects/stdan)
+PyTorch codes for "[Spatio-Temporal Deformable Attention Network for Video Deblurring](https://arxiv.org/abs/2207.10852) (ECCV2022)"
 
 ![Overview](https://vilab.hit.edu.cn/projects/stdan/images/STDAN-Overview.png)
 
