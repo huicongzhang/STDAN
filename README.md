@@ -3,7 +3,7 @@ PyTorch codes for "Spatio-Temporal Deformable Attention Network for Video Deblur
 
 [Paper](https://arxiv.org/abs/2207.10852) | [Project Page](https://vilab.hit.edu.cn/projects/stdan)
 
-Huicongzhang, [Haozhe Xie](https://haozhexie.com/about), [Hongxun Yao](https://vilab.hit.edu.cn/)
+Huicong Zhang, [Haozhe Xie](https://haozhexie.com/about), [Hongxun Yao](https://vilab.hit.edu.cn/)
 
 ![Overview](https://vilab.hit.edu.cn/projects/stdan/images/STDAN-Overview.png)
 
