@@ -26,7 +26,6 @@ class STDAN_Stack(nn.Module):
         extra_channels = 1
         print('Select mask mode: concat, num_mask={}'.format(extra_channels))
 
-        # self.flow_net = flow_pwc.Flow_PWC(load_pretrain=False, pretrain_fn=flow_pretrain_fn, device=device)
         self.recons_net = STDAN.STDAN(in_channels=in_channels, n_sequence=3, out_channels=out_channels,
                                                     n_resblock=n_resblock, n_feat=n_feat,
                                                     extra_channels=extra_channels)
@@ -38,7 +37,6 @@ class STDAN_Stack(nn.Module):
         frame = F.interpolate(frame, size=(h//4, w//4),mode='bilinear', align_corners=True)
         return frame
     def forward(self, x):
-        b,t,c,h,w = x.shape
         frame_list = [x[:, i, :, :, :] for i in range(self.n_sequence)]
         concated = torch.stack([frame_list[0], frame_list[1], frame_list[2]], dim=1)
         recons_1,flow_forward_recons_1,flow_backward_recons_1 = self.recons_net(concated)
@@ -52,7 +50,9 @@ class STDAN_Stack(nn.Module):
         recons_3, flow_forward_recons_3,flow_backward_recons_3 = self.recons_net(concated)
 
         
-        concated = torch.stack([recons_1, recons_2, recons_3], dim=1)
+        concated = torch.stack([recons_1, recons_2, recons_3], dim=1) 
+
+        out, flow_forward_out,flow_backward_out = self.recons_net(concated)
         
         flow_forwards = [flow_forward_recons_1,flow_forward_recons_2,flow_forward_recons_3,flow_forward_out]
         flow_backwards = [flow_backward_recons_1,flow_backward_recons_2,flow_backward_recons_3,flow_backward_out]

@@ -37,37 +37,7 @@ def get_args_from_command_line():
     parser.add_argument('--out_path', dest='out_path', help='Set output path')
     parser.add_argument('--packing', dest='packing', help='set packing')
     
-    # Data specifications
-    # parser.add_argument('--dir_data', type=str, default='/home/hczhang/CODE/CDVD-TSP/dataset/DVD/train',
-                        # help='dataset directory')
-    # parser.add_argument('--dir_data_test', type=str, default='/home/hczhang/CODE/CDVD-TSP/dataset/DVD/test',
-                        # help='dataset directory')
-    # parser.add_argument('--data_train', type=str, default='DVD',
-                            # help='train dataset name')
-    # parser.add_argument('--data_test', type=str, default='DVD',
-                        # help='test dataset name')
-    # parser.add_argument('--process', action='store_true',
-                        # shelp='if True, load all dataset at once at RAM')
-    # parser.add_argument('--patch_size', type=int, default=256,
-                        # help='output patch size')
-    # parser.add_argument('--size_must_mode', type=int, default=1,
-                        # help='the size of the network input must mode this number')
-    # parser.add_argument('--rgb_range', type=int, default=1,
-                        # help='maximum value of RGB')
-    # parser.add_argument('--n_colors', type=int, default=3,
-                        # help='number of color channels to use')
-    # parser.add_argument('--no_augment', action='store_true',
-                        # help='do not use data augmentation')
-    # parser.add_argument('--batch_size', type=int, default=4,
-                    # help='input batch size for training')
-    # parser.add_argument('--test_only', action='store_true',
-                        # help='set this option to test the model')
-    # parser.add_argument('--test_every', type=int, default=1000,
-                    # help='do test per every N batches')
-    # parser.add_argument('--cpu', action='store_true',
-                    # help='use cpu only')
-    # parser.add_argument('--n_threads', type=int, default=8,
-                    # help='number of threads for data loading')
+    
     args = parser.parse_args()
     return args
 
